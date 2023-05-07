@@ -1,0 +1,83 @@
+body {
+    background-color: white;
+}
+header div button {
+    color: black;
+    padding: 8px;
+    cursor: pointer;
+}
+
+div button {
+    border: none;
+    background-color: hsla(70, 45%, 70%, 0.808);
+    border-top-right-radius: 15px;
+    font-family: 'trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    border-bottom-left-radius: 15px;
+    position: relative;
+    font-size: medium;
+    width: 30px;
+}
+div button::after{
+    content: "";
+    background-color: hsla(70, 45%, 70%, 0.808);
+    border-radius: 50%;
+    position: absolute;
+    left: 8px;
+    width: 0;
+    bottom: 0.3px;
+}
+
+section .heading{
+    margin-top: 8px;
+    display: flex;
+    justify-content: center;
+    align-items:flex-start;
+    background-color: whitesmoke;
+    font-family: 'Times New Roman', Times, serif;
+    font-style: oblique;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    width: 500px;
+    min-height: 100vh;
+}
+#padd{
+    cursor: pointer;
+}
+.intro {
+    width: 100%;
+    background-color: blueviolet;
+    transition: 0.5s;
+    padding-bottom: 250px;
+}
+.intro2 {
+    width: 100%;
+    background-color: blueviolet;
+    transition: 0.5s;
+    padding-bottom: 0px;
+}
+
+.title {
+    flex: 1 0 fit-content;
+    background-color:antiquewhite;
+    text-align: center;
+}
+
+.heading{
+    margin: auto;
+    width: 272px;
+    color: black;
+    height: 51px;
+}
+div button:hover:after{   
+    content: "";
+    transition: 0.8s;
+    width: 73px;
+    height: 5px;
+}
+
+span {
+    font-size: medium;
+    font-weight: 900;
+    font-family: verdana;
+    font-style: italic;
+}
